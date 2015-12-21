@@ -1,5 +1,7 @@
 package com.ms_wit.mtmnotesplus;
 
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -26,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        DBOpenHelper helper = new DBOpenHelper(this);
+        SQLiteDatabase database = helper.getWritableDatabase();
     }
 
     @Override
