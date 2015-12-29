@@ -29,8 +29,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        DBOpenHelper helper = new DBOpenHelper(this);
-        SQLiteDatabase database = helper.getWritableDatabase();
+
     }
 
     @Override
