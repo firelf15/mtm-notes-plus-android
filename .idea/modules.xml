@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MTMNotesPlusAndroid.iml" filepath="$PROJECT_DIR$/MTMNotesPlusAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mtm-notes-plus-android.iml" filepath="$PROJECT_DIR$/mtm-notes-plus-android.iml" />
     </modules>
   </component>
 </project>
