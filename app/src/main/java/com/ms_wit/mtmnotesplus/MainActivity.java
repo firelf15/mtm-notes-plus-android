@@ -67,30 +67,6 @@ implements LoaderManager.LoaderCallbacks<Cursor>
         Log.d("MainActivity", "Inserted Note " + noteUri.getLastPathSegment());
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-
-        switch (id) {
-            case R.id.action_create_sample:
-                insertSampleData();
-                break;
-            case R.id.action_delete_all:
-                deleteAllNotes();
-                break;
-        }
-
-
-        return super.onOptionsItemSelected(item);
-    }
 
     private void deleteAllNotes() {
 
@@ -192,5 +168,11 @@ implements LoaderManager.LoaderCallbacks<Cursor>
     public void openEditorForNewNote(View view) {
         Intent intent = new Intent(this, EditorActivity.class);
         startActivityForResult(intent, EDITOR_REQUEST_CODE);
+    }
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data ) {
+        if (requestCode ==EDITOR_REQUEST_CODE && resultCode == RESULT_OK) {
+            restartLoader();
+        }
     }
 }
