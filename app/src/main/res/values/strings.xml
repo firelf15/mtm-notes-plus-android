@@ -6,4 +6,5 @@
     <string name="all_deleted">Gone, baby, gone</string>
     <string name="title_activity_editor">EditorActivity</string>
     <string name="new_note">New Note</string>
+    <string name="note_updated">Changes Saved</string>
 </resources>
