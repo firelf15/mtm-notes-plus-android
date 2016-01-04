@@ -12,7 +12,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.CursorAdapter;
@@ -69,7 +68,6 @@ public class MainActivity extends AppCompatActivity
         ContentValues values = new ContentValues();
         values.put(DBOpenHelper.NOTE_TEXT, noteText);
         Uri noteUri = getContentResolver().insert(NotesProvider.CONTENT_URI, values);
-        Log.d("MainActivity", "Inserted Note " + noteUri.getLastPathSegment());
     }
 
 
