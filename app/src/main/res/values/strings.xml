@@ -2,11 +2,13 @@
     <string name="app_name">MTM Notes Plus</string>
     <string name="create_sample_data">Create Sample Data</string>
     <string name="delete_all_notes">Delete All Notes</string>
-    <string name="are_you_sure">For realz?</string>
+    <string name="are_you_sure">Is that your final answer?</string>
     <string name="all_deleted">Gone, baby, gone</string>
     <string name="title_activity_editor">EditorActivity</string>
     <string name="new_note">New Note</string>
     <string name="note_updated">Changes Saved</string>
     <string name="action_delete">Delete</string>
     <string name="note_deleted">Note Deleted</string>
+    <string name="note">Note</string>
+    <string name="enter_note">Enter note here</string>
 </resources>

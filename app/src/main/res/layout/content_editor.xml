@@ -22,6 +22,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:hint="@string/enter_note"
+        android:inputType="textMultiLine|textCapCharacters" />
 
 </RelativeLayout>
