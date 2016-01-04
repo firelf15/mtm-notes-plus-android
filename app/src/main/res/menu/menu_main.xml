@@ -3,14 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.ms_wit.mtmnotesplus.MainActivity">
     <item
-        android:id="@+id/action_create_sample"
+        android:id="@+id/action_delete"
         android:orderInCategory="100"
-        android:title="@string/create_sample_data"
-        app:showAsAction="never" />
+        android:title="@string/action_delete"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_delete"/>
 
-    <item
-        android:id="@+id/action_delete_all"
-        android:orderInCategory="100"
-        android:title="@string/delete_all_notes"
-        app:showAsAction="never" />
+
 </menu>
