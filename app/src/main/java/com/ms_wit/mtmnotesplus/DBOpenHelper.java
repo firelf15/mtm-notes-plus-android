@@ -14,20 +14,22 @@ public class DBOpenHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 2;
 
     // Table Names
-    private static final String TABLE_CONTENTS = "contents";
-    private static final String TABLE_NOTES = "notes";
+    public static final String TABLE_CONTENTS = "contents";
+    public static final String TABLE_NOTES = "notes";
 
     // CONTENTS Table - column names
-    private static final String CONTENT_ID = "content_id";
-    private static final String CONTENT_TITLE = "content_title";
-    private static final String CONTENT_PICTURE = "content_picture";
-    private static final String CONTENT_PARAGRAPH = "content_paragraph";
+    public static final String CONTENT_ID = "content_id";
+    public static final String CONTENT_TITLE = "content_title";
+    public static final String CONTENT_PICTURE = "content_picture";
+    public static final String CONTENT_PARAGRAPH = "content_paragraph";
+    public static final String[] ALL_COLUMNS_CONTENTS = {CONTENT_ID, CONTENT_TITLE, CONTENT_PICTURE, CONTENT_PARAGRAPH};
 
     // NOTES Table - column names
     public static final String NOTE_ID = "_id";
     public static final String NOTE_TEXT = "noteText";
     public static final String NOTE_CREATED = "noteCreated";
-    private static final String RELATED_CONTENT_ID = "related_content_id";
+    public static final String RELATED_CONTENT_ID = "related_content_id";
+    public static final String[] ALL_COLUMNS = {NOTE_ID, NOTE_TEXT, NOTE_CREATED, RELATED_CONTENT_ID};
 
     // CONTENTS Table Create Statements
     private static final String CREATE_TABLE_CONTENTS =
