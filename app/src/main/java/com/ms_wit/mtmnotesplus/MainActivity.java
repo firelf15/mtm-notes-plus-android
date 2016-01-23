@@ -173,6 +173,11 @@ public class MainActivity extends AppCompatActivity
         startActivityForResult(intent, EDITOR_REQUEST_CODE);
     }
 
+    public void openPnPActivity(View view) {
+        Intent intent = new Intent(this, PnPActivity.class);
+        startActivityForResult(intent, -1 );
+    }
+
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == EDITOR_REQUEST_CODE && resultCode == RESULT_OK) {
             restartLoader();
