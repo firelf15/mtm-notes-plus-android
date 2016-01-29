@@ -11,13 +11,13 @@ public class PnPActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pn_p);
+        setContentView(R.layout.activity_pnp);
 
         ImageView iv = (ImageView) findViewById(R.id.picture1);
         TextView tv = (TextView) findViewById(R.id.text1);
 
         Resources res = getResources();
-        String[] arts = res.getStringArray(R.array.pnpdata);
+        String[] arts = res.getStringArray(R.array.);
         tv.setText(arts[0]);
 
         // get reference to linear layout
